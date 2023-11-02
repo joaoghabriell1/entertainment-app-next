@@ -5,7 +5,7 @@ import IconLogo from "../../../assets/logo.svg";
 const Logo = () => {
   return (
     <Link href="/">
-      <Image src={IconLogo} alt="logo" />
+      <Image className="lg:w-9 lg:mx-auto" src={IconLogo} alt="logo" />
     </Link>
   );
 };

@@ -4,10 +4,10 @@ import Heading from "./heading";
 
 const MediaCard = (props: Partial<Movie>) => {
   return (
-    <div className="text-white">
-      <Thumbnail />
+    <div className="text-white  rounded-md overflow-hidden">
+      <Thumbnail backdropPath={props.backdrop_path!} />
       <MediaInfo />
-      <Heading />
+      <Heading title={props.title!} />
     </div>
   );
 };

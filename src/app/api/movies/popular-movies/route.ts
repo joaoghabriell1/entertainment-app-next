@@ -8,6 +8,10 @@ export async function GET() {
       Authorization: process.env.API_TOKEN as string,
     },
   });
+  if (!res.ok) {
+    throw new Error(res.statusText);
+  }
+
   const data = await res.json();
-  return NextResponse.json({ data: data.results });
+  return NextResponse.json({ data });
 }
