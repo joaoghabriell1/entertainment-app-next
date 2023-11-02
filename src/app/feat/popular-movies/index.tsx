@@ -5,7 +5,7 @@ type Props = {
 };
 
 const PopularMovies = async ({ limit }: Props) => {
-  const res = await fetch("http://localhost:3000/api/movies/popular-movies");
+  const res = await fetch(`${process.env.LOCAL_API}/api/movies/popular-movies`);
 
   const data: {
     data: Movie[];

@@ -3,7 +3,7 @@ import MockMediaThumb from "../../../assets/icon-search.svg";
 
 const Thumbnail = ({ backdropPath }: { backdropPath: string }) => {
   return (
-    <div className="rounded-xl overflow-hidden bg-red-100 ">
+    <div className="rounded-xl overflow-hidde">
       <Image
         width={500}
         height={500}

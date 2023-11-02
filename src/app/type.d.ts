@@ -7,6 +7,7 @@ interface Movie {
   original_language: string;
   overview: string;
   poster_path: string;
+  genres: { id: number; name: string }[];
   genred_ids: { id: number; name: string }[];
   popularity: int;
   status: string;
