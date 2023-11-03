@@ -50,7 +50,6 @@ const List = ({ data, heading }: Props) => {
           {data?.map((media, index) => {
             return (
               <MediaCard
-                id={media.id}
                 poster_path={media.poster_path}
                 backdrop_path={media.backdrop_path}
                 release_date={media.release_date}

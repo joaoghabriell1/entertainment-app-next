@@ -17,7 +17,10 @@ const MovieInfo = ({ data }: Props) => {
           <ul className="flex gap-2">
             {data.genres.map((genre) => {
               return (
-                <li className="bg-slate-500 bg-opacity-40 py-1 px-3 rounded-[100vh] text-sm">
+                <li
+                  key={genre.id}
+                  className="bg-slate-500 bg-opacity-40 py-1 px-3 rounded-[100vh] text-sm"
+                >
                   {genre.name}
                 </li>
               );
@@ -29,13 +32,13 @@ const MovieInfo = ({ data }: Props) => {
             <li className="flex flex-col gap-2">
               <span>Length</span>
               <span className="bg-slate-500 bg-opacity-40 py-1 px-3 rounded-[100vh] text-sm">
-                {data.runtime}min
+                {data.runtime} min.
               </span>
             </li>
-            <li className="flex flex-col gap-2">
+            <li className="flex flex-col gap-2 items-center">
               <span>Language</span>
               <span className="bg-slate-500 bg-opacity-40 py-1 px-3 rounded-[100vh] text-sm">
-                {data.runtime}min
+                {data.original_language}
               </span>
             </li>
             <li className="flex flex-col gap-2 items-center">
@@ -47,7 +50,7 @@ const MovieInfo = ({ data }: Props) => {
           </ul>
         </div>
         <div className="border-b border-slate-500 py-4">
-          <h3 className="text-lg">Status</h3>
+          <h3 className="text-lg mb-2">Status</h3>
           <span className="bg-slate-500 bg-opacity-40 py-1 px-3 rounded-[100vh] text-sm">
             {data.status}
           </span>
