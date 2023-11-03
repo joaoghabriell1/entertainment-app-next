@@ -8,6 +8,7 @@ export async function GET() {
       Authorization: process.env.API_TOKEN as string,
     },
   });
+
   if (!res.ok) {
     throw new Error(res.statusText);
   }
