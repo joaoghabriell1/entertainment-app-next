@@ -5,7 +5,9 @@ type Props = {
 };
 
 const TrendingMovies = async ({ limit }: Props) => {
-  const res = await fetch("http://localhost:3000/api/movies/trending-movies");
+  const res = await fetch(
+    `${process.env.LOCAL_API}/api/movies/trending-movies`
+  );
 
   const data: {
     data: {
