@@ -6,8 +6,6 @@ const Movies = () => {
   return (
     <main className="min-h-screen bg-slate-900 pb-4 lg:pl-28">
       <SearchBar />
-      <TrendingMovies limit={8} />
-      <PopularMovies limit={8} />
     </main>
   );
 };

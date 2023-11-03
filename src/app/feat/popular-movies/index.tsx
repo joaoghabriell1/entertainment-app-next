@@ -1,7 +1,7 @@
 import List from "@/app/components/list";
 
 type Props = {
-  limit?: number;
+  limit?: number | null;
 };
 
 const PopularMovies = async ({ limit }: Props) => {
