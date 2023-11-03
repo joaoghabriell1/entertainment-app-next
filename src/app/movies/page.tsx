@@ -1,4 +1,3 @@
-import React from "react";
 import SearchBar from "../components/searchbar";
 import TrendingMovies from "../feat/trending-movies";
 import PopularMovies from "../feat/popular-movies";

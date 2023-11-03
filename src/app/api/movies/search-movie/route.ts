@@ -16,6 +16,10 @@ export async function GET(request: NextRequest) {
     },
   });
 
+  if (!res.ok) {
+    throw new Error(res.statusText);
+  }
+
   const data = await res.json();
   return NextResponse.json({ data });
 }
