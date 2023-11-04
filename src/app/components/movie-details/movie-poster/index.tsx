@@ -6,7 +6,7 @@ type Props = {
 
 const MoviePoster = ({ PosterPath }: Props) => {
   return (
-    <div className="max-w-xs my-4 max-h-[340px] overflow-hidden rounded-md md:max-h-none md:max-w-sm md:w-[full] md:basis-1/2">
+    <div className="max-w-xs my-4 max-h-[340px] overflow-hidden rounded-md md:max-h-none md:max-w-sm md:w-[full] md:basis-1/2 md:my-0">
       <Image
         width={500}
         height={500}

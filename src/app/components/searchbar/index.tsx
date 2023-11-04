@@ -9,13 +9,6 @@ import { useSearchParams } from "next/navigation";
 const SearchBar = () => {
   const [query, setQuery] = useState("");
   const router = useRouter();
-  const params = useSearchParams();
-
-  /* 
-  const query_param = params.get("query");
-  const page_param = params.get("page");
-  router.push(`/search?query=${query_param}&page=2`);
-  */
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

@@ -4,10 +4,8 @@ import Thumbnail from "./thumbnail";
 import MediaInfo from "./media-info";
 
 const MediaCard = (props: Partial<Movie>) => {
-  const id = props.id;
-
   return (
-    <div className="text-white  rounded-md overflow-hidden">
+    <div className="text-white overflow-hidden">
       <Link href={`/movies/${props.id}`}>
         <Thumbnail backdropPath={props.backdrop_path!} />
         <MediaInfo />

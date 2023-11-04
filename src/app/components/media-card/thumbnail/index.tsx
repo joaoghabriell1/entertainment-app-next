@@ -1,9 +1,19 @@
+"use client";
+
 import Image from "next/image";
-import MockMediaThumb from "../../../assets/icon-search.svg";
+import Overlay from "./overlay";
+import { useState } from "react";
 
 const Thumbnail = ({ backdropPath }: { backdropPath: string }) => {
+  const [isHovered, setIsHovered] = useState<boolean>(false);
+
   return (
-    <div className="rounded-xl overflow-hidde">
+    <div
+      onMouseEnter={() => setIsHovered((prev) => !prev)}
+      onMouseLeave={() => setIsHovered((prev) => !prev)}
+      className="rounded-xl overflow-hidden relative"
+    >
+      {isHovered ? <Overlay /> : null}
       <Image
         width={500}
         height={500}

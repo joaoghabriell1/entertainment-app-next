@@ -6,7 +6,7 @@ type Props = {
 };
 const MovieDetails = ({ data }: Props) => {
   return (
-    <div className="text-white flex flex-col items-center mx-4 md:flex-row md:gap-8 lg:pl-28  h-full">
+    <div className="text-white flex flex-col items-center mx-4 md:flex-row md:gap-8 md:items-start">
       <MoviePoster PosterPath={data.poster_path} />
       <MovieInfo data={data} />
     </div>
