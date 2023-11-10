@@ -1,5 +1,4 @@
 import SearchBar from "@/app/components/searchbar";
-import React from "react";
 
 type Params = {
   params: {

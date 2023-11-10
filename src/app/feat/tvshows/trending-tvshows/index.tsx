@@ -2,7 +2,7 @@ import React from "react";
 import List from "@/app/components/list";
 
 interface Props {
-  limit: number | undefined;
+  limit?: number | undefined;
 }
 
 const TrendingTvShows = async ({ limit }: Props) => {

@@ -1,7 +1,7 @@
 import List from "@/app/components/list";
 
 interface Props {
-  limit?: number | undefined;
+  limit?: number | null;
 }
 
 const PopularTvShows = async ({ limit }: Props) => {
