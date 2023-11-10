@@ -6,8 +6,8 @@ const TvShows = () => {
   return (
     <section className="min-h-screen bg-slate-900 text-white pb-4 lg:pl-28">
       <SearchBar />
-      <PopularTvShows />
-      <TrendingTvShows />
+      <PopularTvShows limit={8} />
+      <TrendingTvShows limit={8} />
     </section>
   );
 };
