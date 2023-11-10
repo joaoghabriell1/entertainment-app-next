@@ -15,7 +15,9 @@ const SearchBar = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    router.push(`/search?query=${query}&page=1`);
+    router.push(
+      `/search?query=${query}&page=1${isMoviePage ? "&isMovie=isMovie" : ""}`
+    );
   };
 
   return (
