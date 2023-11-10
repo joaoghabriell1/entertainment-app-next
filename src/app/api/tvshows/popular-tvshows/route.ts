@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   const res = await fetch(
-    `https://api.themoviedb.org/3/tv/popular?language=en-US&page=1`,
+    `${process.env.EXTERNAL_API}/tv/popular?language=en-US&page=1`,
     {
       cache: "no-cache",
       headers: {

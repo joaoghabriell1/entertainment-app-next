@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  const res = await fetch(`https://api.themoviedb.org/3/trending/tv/day`, {
+  const res = await fetch(`${process.env.EXTERNAL_API}/trending/tv/day`, {
     cache: "no-cache",
     headers: {
       accept: "application/json",
