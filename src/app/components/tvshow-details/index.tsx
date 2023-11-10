@@ -8,7 +8,7 @@ interface Props {
 
 const TvShowDetails = ({ TvShow }: Props) => {
   return (
-    <section className="bg-slate-900 text-white flex flex-col items-center mx-4 md:flex-row md:gap-8 md:items-start">
+    <section className="text-white flex flex-col items-center mx-4 md:flex-row md:gap-8 md:items-start">
       <MediaPoster PosterPath={TvShow.poster_path} />
       <TvShowInfo data={TvShow} />
     </section>

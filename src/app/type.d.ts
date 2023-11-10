@@ -23,7 +23,7 @@ type TVshow = {
   created_by: TVshowCreator[];
   episode_run_time: number[];
   first_air_date: string;
-  genres: { id: number; name: string };
+  genres: { id: number; name: string }[];
   homepage: string;
   id: number;
   in_production: boolean;

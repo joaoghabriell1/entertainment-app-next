@@ -10,7 +10,7 @@ type Params = {
 const TvShowDetails = ({ params: { tvshowId } }: Params) => {
   return (
     <div>
-      <section className="bg-slate-900 min-h-screen lg:pl-40 md:h-screen">
+      <section className="bg-slate-900 min-h-screen lg:pl-40">
         <SearchBar />
         <TvShow TvShowId={tvshowId} />
       </section>
