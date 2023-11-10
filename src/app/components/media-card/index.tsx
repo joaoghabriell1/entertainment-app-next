@@ -12,7 +12,7 @@ const MediaCard = (props: Partial<Movie> & Props) => {
     <div className="text-white overflow-hidden">
       <Link href={`/${props.isMovie ? "movies" : "tvshows"}/${props.id}`}>
         <Thumbnail backdropPath={props.backdrop_path!} />
-        <MediaInfo />
+        <MediaInfo release_date={props.release_date} />
         <Heading title={props.title!} />
       </Link>
     </div>
