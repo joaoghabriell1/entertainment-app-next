@@ -3,10 +3,14 @@ import Heading from "./heading";
 import Thumbnail from "./thumbnail";
 import MediaInfo from "./media-info";
 
-const MediaCard = (props: Partial<Movie>) => {
+interface Props {
+  isMovie?: boolean;
+}
+
+const MediaCard = (props: Partial<Movie> & Props) => {
   return (
     <div className="text-white overflow-hidden">
-      <Link href={`/movies/${props.id}`}>
+      <Link href={`/${props.isMovie ? "movies" : "tvshows"}/${props.id}`}>
         <Thumbnail backdropPath={props.backdrop_path!} />
         <MediaInfo />
         <Heading title={props.title!} />

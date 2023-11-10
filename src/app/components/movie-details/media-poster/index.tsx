@@ -4,7 +4,7 @@ type Props = {
   PosterPath: string;
 };
 
-const MoviePoster = ({ PosterPath }: Props) => {
+const MediaPoster = ({ PosterPath }: Props) => {
   return (
     <div className="max-w-xs my-4 max-h-[340px] overflow-hidden rounded-md md:max-h-none md:max-w-sm md:w-[full] md:basis-1/2 md:my-0">
       <Image
@@ -20,4 +20,4 @@ const MoviePoster = ({ PosterPath }: Props) => {
   );
 };
 
-export default MoviePoster;
+export default MediaPoster;

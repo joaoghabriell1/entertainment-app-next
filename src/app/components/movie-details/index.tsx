@@ -1,5 +1,5 @@
 import MovieInfo from "./movie-info";
-import MoviePoster from "./movie-poster";
+import MediaPoster from "./media-poster";
 
 type Props = {
   data: Movie;
@@ -7,7 +7,7 @@ type Props = {
 const MovieDetails = ({ data }: Props) => {
   return (
     <div className="text-white flex flex-col items-center mx-4 md:flex-row md:gap-8 md:items-start">
-      <MoviePoster PosterPath={data.poster_path} />
+      <MediaPoster PosterPath={data.poster_path} />
       <MovieInfo data={data} />
     </div>
   );
