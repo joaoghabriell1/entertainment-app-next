@@ -1,4 +1,5 @@
 import SearchBar from "@/app/components/searchbar";
+import TvShow from "@/app/feat/tvshows/tvshow";
 
 type Params = {
   params: {
@@ -6,14 +7,15 @@ type Params = {
   };
 };
 
-const TvShow = ({ params: { tvshowId } }: Params) => {
+const TvShowDetails = ({ params: { tvshowId } }: Params) => {
   return (
     <div>
-      <section className="bg-slate-900  min-h-screen lg:pl-40 md:h-screen">
+      <section className="bg-slate-900 min-h-screen lg:pl-40 md:h-screen">
         <SearchBar />
+        <TvShow TvShowId={tvshowId} />
       </section>
     </div>
   );
 };
 
-export default TvShow;
+export default TvShowDetails;
