@@ -22,7 +22,7 @@ const Navbar = () => {
             <Image
               className="aspect-square w-4 md:w-6"
               src={MoviesLogo}
-              alt="movies page icon logo"
+              alt="movies page icon"
             />
           </Link>
         </li>
