@@ -1,6 +1,7 @@
 import SearchMovies from "../feat/search-movies";
-import SearchTvShows from "../feat/tvshows/search-tvshows/iindex";
+import SearchTvShows from "../feat/tvshows/search-tvshows";
 import SearchBar from "../components/searchbar";
+import PaginationBar from "../components/pagination-bar";
 
 const Search = ({
   searchParams,
@@ -14,7 +15,7 @@ const Search = ({
   return (
     <section className="bg-slate-900 min-h-screen text-white pl-32">
       <SearchBar />
-
+      <PaginationBar />
       {isMovie ? (
         <SearchMovies query={query} page={page} />
       ) : (

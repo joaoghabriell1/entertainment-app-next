@@ -25,6 +25,7 @@ const ImageWithFallback = ({ alt, src, width, height, quality }: Props) => {
       quality={quality}
       onError={() => setError("error")}
       src={error ? Clapperboard : src}
+      className={error ? "" : ""}
     />
   );
 };
