@@ -13,9 +13,8 @@ const Search = ({
   const isMovie = searchParams.isMovie === "isMovie";
 
   return (
-    <section className="bg-slate-900 min-h-screen text-white pl-32">
+    <section className="bg-slate-900 min-h-screen text-white lg:pl-32">
       <SearchBar />
-      <PaginationBar />
       {isMovie ? (
         <SearchMovies query={query} page={page} />
       ) : (
